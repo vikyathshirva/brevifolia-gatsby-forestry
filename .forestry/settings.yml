@@ -4,11 +4,6 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: document
-  path: content/posts/**/*
-  label: Record Labels
-  match: "**/*"
-  read_only: false
 - type: heading
   label: Content
 - type: directory
@@ -22,13 +17,9 @@ sections:
 - type: document
   path: content/data/authors.yaml
   label: Author List
-- type: directory
-  path: ''
+- type: document
+  path: content/posts/**/*
   label: Record Labels
-  create: all
-  match: content/posts/**/*
-  templates:
-  - blog-post
 - type: document
   path: content/data/info.json
   label: Info Page
