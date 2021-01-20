@@ -22,8 +22,13 @@ sections:
   label: Info Page
 - type: heading
   label: General Config
-- type: heading
+- type: directory
+  path: ''
   label: Record Labels
+  create: all
+  match: "**/*"
+  templates:
+  - blog-post
 - type: document
   path: config.json
   label: Site Info
