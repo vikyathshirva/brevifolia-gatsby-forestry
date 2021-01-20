@@ -17,9 +17,13 @@ sections:
 - type: document
   path: content/data/authors.yaml
   label: Author List
-- type: document
-  path: content/posts/**/*
+- type: directory
+  path: ''
   label: Record Labels
+  create: all
+  match: content/posts**/*
+  templates:
+  - blog-post
 - type: document
   path: content/data/info.json
   label: Info Page
